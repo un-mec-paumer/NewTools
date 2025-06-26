@@ -50,6 +50,10 @@ BaselineOfNewTools >> baseline: spec [
 			"playground"
 			package: 'NewTools-Playground' with: [ spec requires: #( 'NewTools-Core'  'NewTools-Inspector' ) ];
 			package: 'NewTools-Playground-Tests' with: [ spec requires: #( 'NewTools-Playground' ) ];
+			
+			"profStef"
+			package: 'ProfStef-Core' with: [spec requires: #('NewTools-Playground') ];
+			package: 'ProfStef-Tests' with: [spec requires: #('ProfStef-Core') ];
 		
 			"closed windows"
 			package: 'NewTools-WindowManager';
