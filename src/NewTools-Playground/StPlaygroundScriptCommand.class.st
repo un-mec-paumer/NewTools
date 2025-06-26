@@ -13,7 +13,7 @@ StPlaygroundScriptCommand class >> defaultDescription [
 
 { #category : 'default' }
 StPlaygroundScriptCommand class >> defaultIconName [ 
-	^ #script
+	^ #tools
 ]
 
 { #category : 'default' }

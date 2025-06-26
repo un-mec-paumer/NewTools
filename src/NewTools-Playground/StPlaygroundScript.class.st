@@ -172,9 +172,8 @@ StPlaygroundScript >> saveClass: aSymbol [
 
 { #category : 'instance creation' }
 StPlaygroundScript >> saveClassByText: aString [
-self halt.
+
 	currentClass := (ClyNavigationEnvironment currentImage) system compileANewClassFrom: aString notifying: nil startingFrom: nil.
-	self halt.
 	self createGetSet.
 ]
 
